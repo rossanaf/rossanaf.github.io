@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Rossana Ferreira Photographer</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
+</head>
+<body>
+	<nav id="navbar">
+		<div class="container">
+			<img src="assets/images/logo.png">
+			<ul class="menu" id="sidemenu">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#skills">Skills</a></li> 
+				<li><a href="#portfolio">Portfolio</a></li>
+				<!-- <li><a href="#contact">Contact</a></li> -->
+				<p onclick="closeMenu()">&#10006;</p>
+			</ul>
+			<img src="assets/images/hamburguer.png" class="open-menu" onclick="openMenu()">
+		</div>		
+	</nav>
+
+	<!-- ------ HOME / HEADER ------ -->
+	<div id="home">
+		<div class="container">
+			<h2>Hello, I am</h2>
+			<h1>Rossana Ferreira</h1>
+			<h2>I am a photographer</h2>
+		</div>
+	</div>
+
+	<!-- ------ ABOUT ME ------ -->
+	<div id="about">
+		<div class="container">
+			<h1>ABOUT ME</h1>
+			<h3>[ who am I ]</h3>
+			<p>There are two things in life we can’t run away from, images and technology. <br>
+				They are everywhere. <br>
+				My formation is in computer science and it helped me when I started working with digital photography and photo editing. <br>
+				I’m a constant learner, keeping updated with new application releases and technologies.<br>
+				I believe in team work to achieve better results.
+			</p>
+			<img src="assets/images/signature.png">
+			<p>rf@rossana.ferreira.com</p>
+			<p id="about-phone">+351 910 123 456</p>
+			<h3>[ education ]</h3>
+			<ul id="education">
+				<li>Computer Science</li>
+				<li>Introduction to Photography</li>
+				<li>Advanced Photoshop</li>
+				<li>Light and Flash</li>
+				<li>Cinema: From thought to action</li>
+			</ul>
+			<h3>[ my hobbies ]</h3>
+			<ul id="hobbies">
+				<li><p>&#128591 Yoga</p></li>
+				<li><p>&#129336 Cardio Fitness</p></li>
+				<li><p>&#129379 Cooking</p></li>
+				<li><p>&#128214 Reading</p></li>
+				<li><p>&#127922 Board Games</p></li>
+				<li><p>&#128747 Travelling</p></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- ------ SERVICES ------ -->
+	<div id="services">
+		<div class="container">
+			<h1>MY SERVICES</h1>
+			<h3>[ main areas of work ]</h3>
+			<div class="services-list">
+				<div id="service-sports">
+					<img src="assets/images/sports.jpg">
+					<a href="#portfolio"><h2>Sports</h2></a>					
+				</div>
+				<div id="service-weddings">
+					<img src="assets/images/weddings.jpg">
+					<a href="#"><h2>Weddings</h2></a>
+				</div>
+				<div id="service-interior">
+					<img src="assets/images/interior.jpg">
+					<a href="#"><h2>Interior<br>design</h2></a>					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ------ SKILLS ------ -->
+	<div id="skills">
+		<div class="container">
+			<h1>MY SKILLS</h1>
+			<h3>[ what I know ]</h3>
+			<div id="bars">
+				<div class="info">
+					<span>Capture One</span>
+					<span>90%</span>
+				</div>
+				<div class="line co"></div>
+				<div class="info">
+					<span>Lightroom</span>
+					<span>80%</span>
+				</div>
+				<div class="line lr"></div>
+				<div class="info">
+					<span>Photoshop</span>
+					<span>40%</span>
+				</div>
+				<div class="line ps"></div>
+				<div class="info">
+					<span>InDesign</span>
+					<span>80%</span>
+				</div>
+				<div class="line id"></div>
+				<div class="info">
+					<span>Ilustrator</span>
+					<span>50%</span>
+				</div>
+				<div class="line ai"></div>
+				<div class="info">
+					<span>HTML</span>
+					<span>90%</span>
+				</div>
+				<div class="line html"></div>
+				<div class="info">
+					<span>CSS</span>
+					<span>50%</span>
+				</div>
+				<div class="line css"></div>
+				<div class="info">
+					<span>JavaScript</span>
+					<span>50%</span>
+				</div>
+				<div class="line js"></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ------ PORTFOLIO ------ -->
+	<div id="portfolio">
+		<div class="container">
+			<h1>PORTFOLIO</h1>
+
+			<!-- ------ PORTFOLIO / SPORTS------ -->
+			<h3>[ sports ]</h3>
+			<ul class="portfolio-list">
+				<li class="portfolio-columns">
+					<img src="assets/images/sports/sport-1.jpg" onclick="openModal();currentSportSlide(1)" class="hover-shadow">
+				</li>
+				<li class="portfolio-columns">
+					<img src="assets/images/sports/sport-2.jpg" onclick="openModal();currentSportSlide(2)" class="hover-shadow">
+				</li>
+				<li class="portfolio-columns">
+					<img src="assets/images/sports/sport-3.jpg" onclick="openModal();currentSportSlide(3)" class="hover-shadow">
+				</li>
+				<li class="portfolio-columns">
+					<img src="assets/images/sports/sport-4.jpg" onclick="openModal();currentSportSlide(4)" class="hover-shadow">
+				</li>
+				<li class="portfolio-columns">
+					<img src="assets/images/sports/sport-5.jpg" onclick="openModal();currentSportSlide(5)" class="hover-shadow">
+				</li>
+				<li class="portfolio-columns">
+					<img src="assets/images/sports/sport-6.jpg" onclick="openModal();currentSportSlide(6)" class="hover-shadow">
+				</li>
+				<li class="portfolio-columns">
+					<img src="assets/images/sports/sport-7.jpg" onclick="openModal();currentSportSlide(7)" class="hover-shadow">
+				</li>
+				<li class="portfolio-columns">
+					<img src="assets/images/sports/sport-8.jpg" onclick="openModal();currentSportSlide(8)" class="hover-shadow">
+				</li>
+			</ul>
+			<div id="portfolio-sports" class="modal">
+				<div class="modal-content">
+					<span class="close cursor" onclick="closeModal()">&#10006;</span>
+					<a class="prev" onclick="plusSportSlides(-1)">&#10094;</a>
+					<div class="portfolio-sport">
+						<img src="assets/images/sports/sport-1.jpg" onclick="closeModal()" style="width:100%">
+					</div>
+					<div class="portfolio-sport">
+						<img src="assets/images/sports/sport-2.jpg" onclick="closeModal()" style="width:100%">
+					</div>
+					<div class="portfolio-sport">
+						<img src="assets/images/sports/sport-3.jpg" onclick="closeModal()" style="width:100%">
+					</div>
+					<div class="portfolio-sport">
+						<img src="assets/images/sports/sport-4.jpg" onclick="closeModal()" style="width:100%">
+					</div>
+					<div class="portfolio-sport">
+						<img src="assets/images/sports/sport-5.jpg" onclick="closeModal()" style="width:100%">
+					</div>
+					<div class="portfolio-sport">
+						<img src="assets/images/sports/sport-6.jpg" onclick="closeModal()" style="width:100%">
+					</div>
+					<div class="portfolio-sport">
+						<img src="assets/images/sports/sport-7.jpg" onclick="closeModal()" style="width:100%">
+					</div>
+					<div class="portfolio-sport">
+						<img src="assets/images/sports/sport-8.jpg" onclick="closeModal()" style="width:100%">
+					</div>
+					<a class="next" onclick="plusSportSlides(1)">&#10095;</a>
+				</div>
+			</div>
+
+			<!-- ------ PORTFOLIO / WEDDINGS------ -->
+			<h3>[ weddings ]</h3>
+			<div class="portfolio-list">
+				<div class="portfolio-columns">
+					<img src="assets/images/weddings/wedding-1.jpg" onclick="openWeddings();currentWeddingSlide(1)" class="hover-shadow">
+				</div>
+				<div class="portfolio-columns">
+					<img src="assets/images/weddings/wedding-2.jpg" onclick="openWeddings();currentWeddingSlide(2)" class="hover-shadow">
+				</div>
+				<div class="portfolio-columns">
+					<img src="assets/images/weddings/wedding-3.jpg" onclick="openWeddings();currentWeddingSlide(3)" class="hover-shadow">
+				</div>
+				<div class="portfolio-columns">
+					<img src="assets/images/weddings/wedding-4.jpg" onclick="openWeddings();currentWeddingSlide(4)" class="hover-shadow">
+				</div>
+				<div class="portfolio-columns">
+					<img src="assets/images/weddings/wedding-5.jpg" onclick="openWeddings();currentWeddingSlide(5)" class="hover-shadow">
+				</div>
+				<div class="portfolio-columns">
+					<img src="assets/images/weddings/wedding-6.jpg" onclick="openWeddings();currentWeddingSlide(6)" class="hover-shadow">
+				</div>
+				<div class="portfolio-columns">
+					<img src="assets/images/weddings/wedding-7.jpg" onclick="openWeddings();currentWeddingSlide(7)" class="hover-shadow">
+				</div>
+				<div class="portfolio-columns">
+					<img src="assets/images/weddings/wedding-8.jpg" onclick="openWeddings();currentWeddingSlide(8)" class="hover-shadow">
+				</div>
+			</div>
+			<div id="portfolio-weddings" class="modal">
+				<div class="modal-content">
+					<span class="close cursor" onclick="closeWeddings()">&#10006;</span>
+					<a class="prev" onclick="plusWeddingSlides(-1)">&#10094;</a>
+					<div class="portfolio-wedding">
+						<img src="assets/images/weddings/wedding-1.jpg" onclick="closeWeddings()" style="width:100%">
+					</div>
+					<div class="portfolio-wedding">
+						<img src="assets/images/weddings/wedding-2.jpg" onclick="closeWeddings()" style="width:100%">
+					</div>
+					<div class="portfolio-wedding">
+						<img src="assets/images/weddings/wedding-3.jpg" onclick="closeWeddings()" style="width:100%">
+					</div>
+					<div class="portfolio-wedding">
+						<img src="assets/images/weddings/wedding-4.jpg" onclick="closeWeddings()" style="width:100%">
+					</div>
+					<div class="portfolio-wedding">
+						<img src="assets/images/weddings/wedding-5.jpg" onclick="closeWeddings()" style="width:100%">
+					</div>
+					<div class="portfolio-wedding">
+						<img src="assets/images/weddings/wedding-6.jpg" onclick="closeWeddings()" style="width:100%">
+					</div>
+					<div class="portfolio-wedding">
+						<img src="assets/images/weddings/wedding-7.jpg" onclick="closeWeddings()" style="width:100%">
+					</div>
+					<div class="portfolio-wedding">
+						<img src="assets/images/weddings/wedding-8.jpg" onclick="closeWeddings()" style="width:100%">
+					</div>
+					<a class="next" onclick="plusWeddingSlides(1)">&#10095;</a>
+				</div>
+			</div>
+
+			<!-- ------ PORTFOLIO / INTERIORS DESIGN------ -->
+			<h3>[ interiors ]</h3>
+			<div class="portfolio-list">
+				<div class="portfolio-columns">
+					<img src="assets/images/interiors/interior-1.jpg" onclick="openInteriors();currentInteriorSlide(1)" class="hover-shadow">
+				</div>
+				<div class="portfolio-columns">
+					<img src="assets/images/interiors/interior-2.jpg" onclick="openInteriors();currentInteriorSlide(2)" class="hover-shadow">
+				</div>
+				<div class="portfolio-columns">
+					<img src="assets/images/interiors/interior-3.jpg" onclick="openInteriors();currentInteriorSlide(3)" class="hover-shadow">
+				</div>
+				<div class="portfolio-columns">
+					<img src="assets/images/interiors/interior-4.jpg" onclick="openInteriors();currentInteriorSlide(4)" class="hover-shadow">
+				</div>
+				<div class="portfolio-columns">
+					<img src="assets/images/interiors/interior-5.jpg" onclick="openInteriors();currentInteriorSlide(5)" class="hover-shadow">
+				</div>
+				<div class="portfolio-columns">
+					<img src="assets/images/interiors/interior-6.jpg" onclick="openInteriors();currentInteriorSlide(6)" class="hover-shadow">
+				</div>
+				<div class="portfolio-columns">
+					<img src="assets/images/interiors/interior-7.jpg" onclick="openInteriors();currentInteriorSlide(7)" class="hover-shadow">
+				</div>
+				<div class="portfolio-columns">
+					<img src="assets/images/interiors/interior-8.jpg" onclick="openInteriors();currentInteriorSlide(8)" class="hover-shadow">
+				</div>
+			</div>
+			<div id="portfolio-interiors" class="modal">
+				<div class="modal-content">
+					<span class="close cursor" onclick="closeInteriors()">&#10006;</span>
+					<a class="prev" onclick="plusInteriorSlides(-1)">&#10094;</a>
+					<div class="portfolio-interior">
+						<img src="assets/images/interiors/interior-1.jpg" onclick="closeInteriors()" style="width:100%">
+					</div>
+					<div class="portfolio-interior">
+						<img src="assets/images/interiors/interior-2.jpg" onclick="closeInteriors()" style="width:100%">
+					</div>
+					<div class="portfolio-interior">
+						<img src="assets/images/interiors/interior-3.jpg" onclick="closeInteriors()" style="width:100%">
+					</div>
+					<div class="portfolio-interior">
+						<img src="assets/images/interiors/interior-4.jpg" onclick="closeInteriors()" style="width:100%">
+					</div>
+					<div class="portfolio-interior">
+						<img src="assets/images/interiors/interior-5.jpg" onclick="closeInteriors()" style="width:100%">
+					</div>
+					<div class="portfolio-interior">
+						<img src="assets/images/interiors/interior-6.jpg" onclick="closeInteriors()" style="width:100%">
+					</div>
+					<div class="portfolio-interior">
+						<img src="assets/images/interiors/interior-7.jpg" onclick="closeInteriors()" style="width:100%">
+					</div>
+					<div class="portfolio-interior">
+						<img src="assets/images/interiors/interior-8.jpg" onclick="closeInteriors()" style="width:100%">
+					</div>
+					<a class="next" onclick="plusInteriorSlides(1)">&#10095;</a>
+				</div>
+			</div>
+
+			<!-- ------ PORTFOLIO / TRAVELS ------ -->
+			<h3>[ travelling ]</h3>
+			<div class="portfolio-list">
+				<div class="portfolio-columns">
+					<img src="assets/images/travels/travel-1.jpg" onclick="openTravels();currentTravelSlide(1)" class="hover-shadow">
+				</div>
+				<div class="portfolio-columns">
+					<img src="assets/images/travels/travel-2.jpg" onclick="openTravels();currentTravelSlide(2)" class="hover-shadow">
+				</div>
+				<div class="portfolio-columns">
+					<img src="assets/images/travels/travel-3.jpg" onclick="openTravels();currentTravelSlide(3)" class="hover-shadow">
+				</div>
+				<div class="portfolio-columns">
+					<img src="assets/images/travels/travel-4.jpg" onclick="openTravels();currentTravelSlide(4)" class="hover-shadow">
+				</div>
+				<div class="portfolio-columns">
+					<img src="assets/images/travels/travel-5.jpg" onclick="openTravels();currentTravelSlide(5)" class="hover-shadow">
+				</div>
+				<div class="portfolio-columns">
+					<img src="assets/images/travels/travel-6.jpg" onclick="openTravels();currentTravelSlide(6)" class="hover-shadow">
+				</div>
+				<div class="portfolio-columns">
+					<img src="assets/images/travels/travel-7.jpg" onclick="openTravels();currentTravelSlide(7)" class="hover-shadow">
+				</div>
+				<div class="portfolio-columns">
+					<img src="assets/images/travels/travel-8.jpg" onclick="openTravels();currentTravelSlide(8)" class="hover-shadow">
+				</div>
+			</div>
+			<div id="portfolio-travels" class="modal">
+				<div class="modal-content">
+					<span class="close cursor" onclick="closeTravels()">&#10006;</span>
+					<a class="prev" onclick="plusTravelSlides(-1)">&#10094;</a>
+					<div class="portfolio-travel">
+						<img src="assets/images/travels/travel-1.jpg" onclick="closeTravels()" style="width:100%">
+					</div>
+					<div class="portfolio-travel">
+						<img src="assets/images/travels/travel-2.jpg" onclick="closeTravels()" style="width:100%">
+					</div>
+					<div class="portfolio-travel">
+						<img src="assets/images/travels/travel-3.jpg" onclick="closeTravels()" style="width:100%">
+					</div>
+					<div class="portfolio-travel">
+						<img src="assets/images/travels/travel-4.jpg" onclick="closeTravels()" style="width:100%">
+					</div>
+					<div class="portfolio-travel">
+						<img src="assets/images/travels/travel-5.jpg" onclick="closeTravels()" style="width:100%">
+					</div>
+					<div class="portfolio-travel">
+						<img src="assets/images/travels/travel-6.jpg" onclick="closeTravels()" style="width:100%">
+					</div>
+					<div class="portfolio-travel">
+						<img src="assets/images/travels/travel-7.jpg" onclick="closeTravels()" style="width:100%">
+					</div>
+					<div class="portfolio-travel">
+						<img src="assets/images/travels/travel-8.jpg" onclick="closeTravels()" style="width:100%">
+					</div>
+					<a class="next" onclick="plusTravelSlides(1)">&#10095;</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="./js/portfolio.js"></script>
+</body>
+</html>
